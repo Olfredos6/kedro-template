@@ -8,6 +8,7 @@ This repository is a (Cookiecutter)[https://cookiecutter.readthedocs.io/en/stabl
 - static analysis using pre-commit hooks on each `git-commit`
 - automatic code testing before pushing to remote Git repo
 - Bitbucket CI/CD pipelines
+- local development within a docker container
 
 
 ### How do I get set up? ###

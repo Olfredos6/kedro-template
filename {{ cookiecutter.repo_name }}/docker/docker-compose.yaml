@@ -1,0 +1,13 @@
+  services:
+    kedro:
+      build:
+        context: ../
+        dockerfile: docker/Dockerfile
+      
+      ports:
+        - 4141:4141
+      
+      volumes:
+        - type: bind
+          source: ../
+          target: /home/kedro_docker
