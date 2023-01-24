@@ -1,12 +1,14 @@
-# README #
+# Template for Kedro-based ML/AI projects #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This repository is a (Cookiecutter)[https://cookiecutter.readthedocs.io/en/stable/index.html] template for building ML/AI projects the Daemon way.
 
-### What is this repository for? ###
+### features
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+- fully configured project structure
+- static analysis using pre-commit hooks on each `git-commit`
+- automatic code testing before pushing to remote Git repo
+- Bitbucket CI/CD pipelines
+
 
 ### How do I get set up? ###
 
