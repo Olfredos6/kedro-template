@@ -12,7 +12,7 @@ ARG KEDRO_GID=0
 RUN groupadd -f -g ${KEDRO_GID} kedro_group && \
 useradd -m -d /home/kedro_docker -s /bin/bash -g ${KEDRO_GID} -u ${KEDRO_UID} kedro_docker
 
-WORKDIR /home/kedro-docker
+WORKDIR /home/kedro_docker
 USER kedro_docker
 
 FROM runtime-environment
