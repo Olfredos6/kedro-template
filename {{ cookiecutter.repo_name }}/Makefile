@@ -1,4 +1,7 @@
 clean:
+# @rm -r spaceflights
+	cd ./docker && docker compose down
+	@-docker rmi docker-kedro
 	@rm -r spaceflights
 
 
@@ -6,5 +9,6 @@ test:
 	@cookiecutter git@bitbucket.org:daemonsolutions/daemn-kedro-template.git
 
 docker: 
-	@chmod +x ./spaceflights/check-docker-img.sh
-	@./spaceflights/check-docker-img.sh
+	@chmod +x ./check-docker-img.sh
+	@./check-docker-img.sh
+# cd ./spaceflights/docker && pwd && docker compose down && docker compose up

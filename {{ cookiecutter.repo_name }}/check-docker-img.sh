@@ -1,10 +1,9 @@
-ROOTPATH=`dirname $(readlink -f $0)`
-echo $ROOTPATH
-echo $ROOTPATH"/docker"
+PROJECT_ROOT=`dirname $(readlink -f $0)`
 img_name="docker-kedro:latest"
 dockerfile_path=spaceflights/docker
-cd $ROOTPATH"/docker"
-echo "haaaaaaaaaaa!"
+
+cd $PROJECT_ROOT"/docker"
+
 if [[ "$(docker images -q $img_name  2> /dev/null)" == "" ]]
 then
     docker compose up --build
